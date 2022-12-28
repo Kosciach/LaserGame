@@ -21,4 +21,9 @@ public class ScoreScript : MonoBehaviour
         _score += points;
         _scoreText.text = _score.ToString();
     }
+
+    private void OnDisable()
+    {
+        Debug.Log("Save now!");
+    }
 }
