@@ -1,18 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
+using Unity.VisualScripting;
 
 public class ShakeScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] CinemachineVirtualCamera _cinemachineVirtualCamera;
+    [SerializeField] CinemachineBasicMultiChannelPerlin _noise;
+
+    private void Awake()
     {
-        
+        _noise = _cinemachineVirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Shake(float shakeStrength, float shakeDuration)
     {
-        
+        _noise.m_AmplitudeGain = shakeStrength;
+        StartCoroutine(StopShake(shakeDuration));
+    }
+
+
+    IEnumerator StopShake(float shakeDuration)
+    {
+        yield return new WaitForSeconds(shakeDuration);
+        _noise.m_AmplitudeGain = 0;
     }
 }

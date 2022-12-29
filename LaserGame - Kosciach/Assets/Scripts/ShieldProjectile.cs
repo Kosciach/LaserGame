@@ -9,6 +9,7 @@ public class ShieldProjectile : MonoBehaviour
     [SerializeField] ParticleSystem _shieldProjectileParticle;
     [SerializeField] Rigidbody2D _rigidbody2D;
     [SerializeField] ScoreScript _scoreScript;
+    [SerializeField] ShakeScript _shakeScript;
     [SerializeField] LayerMask _enemyMask;
 
     [Header("----Values-------------")]
@@ -23,6 +24,7 @@ public class ShieldProjectile : MonoBehaviour
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         _camera = FindObjectOfType<Camera>();
         _scoreScript = FindObjectOfType<ScoreScript>();
+        _shakeScript = FindObjectOfType<ShakeScript>();
     }
     private void Start()
     {
@@ -38,6 +40,7 @@ public class ShieldProjectile : MonoBehaviour
     {
         if (other.transform.CompareTag("Enemy"))
         {
+            _shakeScript.Shake(2f, 0.5f);
             Destruction();
         }
     }
