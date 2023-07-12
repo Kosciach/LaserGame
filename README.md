@@ -1,4 +1,4 @@
-<h1 align="center">BlueVRed2</h1>
+<h1 align="center">BouceIt</h1>
 
 <p align="center">
   <a href="https://kosciach.itch.io/bounceit">
@@ -7,14 +7,25 @@
 </p>
 
 
-<div>
+<div align="center">
   <p>
-    --------------------------------------------------------------<br>
-    --------------------------------------------------------------<br>
-    --------------------------------------------------------------<br>
-    --------------------------------------------------------------<br>
-    --------------------------------------------------------------<br>
+    BouceIt is a highscore game where player's goal is to protect the reactor in the middle from enemy bullets, and use them to fight back. A simple game meant to be played to kill time.
   </p>
-  <img src="https://img.itch.zone/aW1hZ2UvMTg1NzMxOS8xMDkwODIzOC5wbmc=/original/I2WBXx.png" alt="BounceIt">
-</div>
 <br>
+  
+<img src="https://img.itch.zone/aW1hZ2UvMTg1NzMxOS8xMDkwODIzOC5wbmc=/original/I2WBXx.png" alt="BounceIt">
+
+<br><br>
+  <h2>Reactor</h2>
+  
+Reactor represents player's health, 7core means 7hp. Each time reactor is hit, all nerby enemy bullets are destroyed (result of core explosion).<br>
+When all cores are gone, reactor explodes and destroys all enemies and their bullets.
+
+
+<br><br>
+  <h2>Fighting back</h2>
+  
+By putting two fingers on a screen, player creates energy shield that has an ability to turn enemy bullets into player's.<br>
+Player's bullets explode on impact with enemy and destroy both enemies and enemy bullets.<br>
+Each enemy kill increments the score and checks if highscore should be updated.
+</div>
