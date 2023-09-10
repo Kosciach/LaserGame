@@ -13,7 +13,10 @@
   </p>
 <br>
   
-<img src="https://img.itch.zone/aW1hZ2UvMTg1NzMxOS8xMDkwODIzOC5wbmc=/original/I2WBXx.png" alt="BounceIt">
+<p float="left">
+  <img src="https://img.itch.zone/aW1hZ2UvMTg1NzMxOS8xMDkwODIzOC5wbmc=/original/I2WBXx.png" width="200" alt="BounceIt1">
+  <img src="https://img.itch.zone/aW1hZ2UvMTg1NzMxOS8xMDkwODIyMS5wbmc=/347x500/PC6%2FK%2B.png" width="200" alt="BounceIt2">
+</p>
 
 <br><br>
   <h2>Reactor</h2>
